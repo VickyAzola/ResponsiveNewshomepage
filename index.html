@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body class="m-4 md:mx-24 md:my-14">
+
+  <header class="flex justify-between pb-8 md:pb-10">
+    <a class="mt-2 w-12 md:w-16" href="#"><img src="assets/images/logo.svg" alt="Logo"></a>
+    <div onclick="closeNavMenu()" class="hidden bg-black opacity-50 absolute w-full min-h-screen left-[0] top-[0]" id="backMenu"></div>
+    <nav class="Menu" id="Menu" aria-label="navigation header">
+      <ul>
+        <li class="hover:text-[#F15E50]"><a href="#">Home</a></li>
+        <li class="hover:text-[#F15E50]"><a href="#">New</a></li>
+        <li class="hover:text-[#F15E50]"><a href="#">Popular</a></li>
+        <li class="hover:text-[#F15E50]"><a href="#">Trending</a></li>
+        <li class="hover:text-[#F15E50]"><a href="#">Categories</a></li>
+      </ul>
+      <a class="menuBtn" href="javascript:void(0);" onclick="showNavMenu()">
+        <img src="assets/images/icon-menu.svg" alt="Menu Icon" />
+      </a>
+      <a class="closeBtn" href="javascript:void(0);" onclick="closeNavMenu()">
+        <img src="assets/images/icon-menu-close.svg" alt="Close Icon" />
+      </a>
+    </nav>
+  </header>
+
+<main>
+  <div class="md:grid md:grid-cols-3 md:gap-x-8">
+    <section class="mb-20 md:col-span-2">
+      <img class="block md:hidden" src="assets/images/image-web-3-mobile.jpg" alt="background Image"/>
+      <img class="hidden md:block" src="assets/images/image-web-3-desktop.jpg" alt="background Image"/>
+      <div class="md:grid md:grid-cols-2">
+        <h1 class="my-6 font-extrabold text-5xl md:text-6xl text-[#00001A]">The Bright Future of Web 3.0?</h1>
+        <div>
+          <p class="md:mt-6 mb-6 text-[#5D5F79] leading-8">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+          <button class="bg-[#F15E50] text-sm text-white px-10 py-4 uppercase font-bold tracking-[.3rem] hover:bg-black">Read more</button>
+        </div>  
+      </div>
+    </section>
+    
+    <section class="bg-[#00001A] p-4 md:p-6 space-y-2 mb-20 md:col-start-3">
+      <h2 class="text-[#E9AB53] text-3xl md:text-4xl font-bold">New</h2>
+      <div class="border-b py-4 md:py-6">
+        <a href="#" class="text-[#FFFDFA] text-lg md:text-xl font-bold hover:text-[#E9AB53]">Hydrogen VS Electric Cars</a>
+        <p class="mt-2 md:mt-4 text-[#C5C6CE] text-sm md:text-base leading-6">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <div class="border-b py-4 md:py-6">
+        <a href="#" class="text-[#FFFDFA] text-lg md:text-xl font-bold hover:text-[#E9AB53]">The Downsides of AI Artistry</a>
+        <p class="mt-2 md:mt-4 text-[#C5C6CE] text-sm md:text-base leading-6">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="py-4 md:py-6">
+        <a href="#" class="text-[#FFFDFA] text-lg md:text-xl font-bold hover:text-[#E9AB53]">Is VC Funding Drying Up?</a>
+        <p class="mt-2 md:mt-4 text-[#C5C6CE] text-sm md:text-base leading-6">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div> 
+    </section>
+  </div>
+
+  <section class="space-y-8 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-10">
+    <div class="flex gap-x-6">
+      <img class="w-24 md:w-28" src="assets/images/image-retro-pcs.jpg" alt="">
+      <div class="flex flex-col gap-y-3"> 
+        <h3 class="text-3xl font-bold text-[#C5C6CE]">01</h3>
+        <a href="#" class="font-extrabold text-lg text-[#00001A] hover:text-[#F15E50]">Reviving Retro PCs</a>
+        <p class="text-[#5D5F79]">What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="flex gap-x-6">
+      <img class="w-24 md:w-28" src="assets/images/image-top-laptops.jpg" alt="">
+      <div class="flex flex-col gap-y-3">
+        <h4 class="text-3xl font-bold text-[#C5C6CE]">02</h3>
+        <a href="#" class="font-extrabold text-lg text-[#00001A] hover:text-[#F15E50]">Top 10 Laptops of 2022</a>
+        <p class="text-[#5D5F79]">Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="flex gap-x-6">
+      <img class="w-24 md:w-28" src="assets/images/image-gaming-growth.jpg" alt="">
+      <div class="flex flex-col gap-y-3">
+        <h5 class="text-3xl font-bold text-[#C5C6CE]">03</h3>
+        <a href="#" class="font-extrabold text-lg text-[#00001A] hover:text-[#F15E50]">The Growth of Gaming</a>
+        <p class="text-[#5D5F79]">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="text-xs text-gray-400 py-2 text-center mt-8">
+    <p>Challenge by <a class="font-bold hover:text-[#F15E50]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="font-bold hover:text-[#F15E50]" href="https://github.com/VickyAzola/ResponsiveNewshomepage" target="_blank">Victoria Azola</a>.</p>
+  </footer>
+</body>
+<script src="index.js"></script>
+</html>
